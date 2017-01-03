@@ -1,8 +1,4 @@
-require 'watir'
-require 'pry'
 require 'yaml'
-require 'phantomjs'
-require 'sanitize'
 require 'fb_error_machine/marketing_api_error_scraper'
 require 'fb_error_machine/graph_error_scraper'
 require 'fb_error_machine/error_writer'

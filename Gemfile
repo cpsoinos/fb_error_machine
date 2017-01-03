@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'watir'
-gem 'sanitize'
-gem 'phantomjs'
-
 group :development, :test do
+  gem 'watir'
+  gem 'sanitize'
+  gem 'phantomjs'
   gem 'pry'
   gem 'rspec'
 end
