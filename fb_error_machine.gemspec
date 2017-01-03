@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(test|spec|features)/})
   end
   spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = ["scrape_fb_errors", "scrape_fb_graph_api_errors", "scrape_fb_marketing_api_errors"]
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.13"
