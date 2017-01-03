@@ -1,0 +1,211 @@
+---
+- :error_code: '1'
+  :description: An unknown error occurred
+- :error_code: '4'
+  :description: Application request limit reached
+- :error_code: '10'
+  :description: Application does not have permission for this action
+- :error_code: '17'
+  :description: User request limit reached
+- :error_code: '100'
+  :description: Invalid parameter
+- :error_code: '102'
+  :description: Session key invalid or no longer valid
+- :error_code: '104'
+  :description: Incorrect signature
+- :error_code: '190'
+  :description: Invalid OAuth 2.0 Access Token
+- :error_code: '200'
+  :description: Permission error
+- :error_code: '294'
+  :description: Managing advertisements requires the extended permission ads_management
+    and an application that is whitelisted to access the Marketing API
+- :error_code: '2606'
+  :description: Unable to display a preview of this ad
+- :error_code: '2607'
+  :description: The given currency is invalid for usage with ads.
+- :error_code: '2615'
+  :description: Invalid call to update this adaccount
+- :error_code: '5000'
+  :description: Unknown Error Code
+- :error_code: '1349118'
+  :description: One or more of the given URLs is not allowed by the Stream post URL
+    security app setting. It must match the Website URL or Canvas URL, or the domain
+    must be a subdomain of one of the App's domains. Read more about Login Security
+    to learn more about app settings related to security.
+- :error_code: '1359036'
+  :description: 'Ad Create Failed - Too Many Ads: The account {account_id} has reached
+    the maximum number of ads {max}'
+- :error_code: '1359102'
+  :description: 'Invalid Parameter In Spec: Parameter has invalid value or missing
+    required parameter: {param-value}'
+- :error_code: '1487006'
+  :description: 'Invalid Campaign ID: You must specify a campaign, and the campaign
+    specified must belong to the account specified and must not be deleted.'
+- :error_code: '1487007'
+  :description: 'Campaign Ended: You can''t edit ads in a campaign that has ended.
+    Please create a new ad within this campaign, update the campaign end time, pick
+    another campaign, or create a new campaign.'
+- :error_code: '1487010'
+  :description: 'Ad Bid Too High: Your bid is above the maximum for its type and placement.
+    Please try again with a value below the maximum if you would like to raise your
+    bid.'
+- :error_code: '1487013'
+  :description: 'Bid Too Low: Your bid is below the minimum for its placement and
+    type. If you don''t want your ad to run at the minimum bid rate, please pause
+    it. Otherwise, please increase the bid to be within the suggested range.'
+- :error_code: '1487014'
+  :description: Campaign budget was too low. Please increase the daily budget to at
+    least 2 times the amount of the highest CPC ad bid, which is at least {minimum_budget}.
+    You bid {bid}.
+- :error_code: '1487015'
+  :description: The ad creative is invalid
+- :error_code: '1487065'
+  :description: 'Ad Missing Targeting Spec: Ad spec needs a targeting spec. Please
+    use targeting field to specify what audience the ad should be shown to. Field
+    ''countries'' is required; all others are optional.'
+- :error_code: '1487087'
+  :description: 'Ad Create Failed: The Ad Create Failed for the following reason:
+    {reason}'
+- :error_code: '1487089'
+  :description: 'Target Spec Invalid: The target spec is invalid: {reason}'
+- :error_code: '1487090'
+  :description: 'Ad Edit Failed - Spec Errors: {error}'
+- :error_code: '1487108'
+  :description: 'Invalid Cities: Please check that the format in which you are specify
+    the cities is correct, and if you specify ids, that they are of the correct type
+    (not, for example, the id of the page for the city; city ids are returned by,
+    e.g., graph.facebook.com/search?type=adcity).'
+- :error_code: '1487124'
+  :description: 'Invalid Connection: You can only specify connections to objects you
+    are an administrator or developer of.'
+- :error_code: '1487133'
+  :description: 'Invalid Negative Connections: If you specify negative targeting,
+    you must be the administrator or developer of the objects whose fans you want
+    to specify to exclude. You are not an admin of the following specified connections:
+    {connections}'
+- :error_code: '1487172'
+  :description: Could not save creative
+- :error_code: '1487174'
+  :description: 'Invalid Image Hash: Invalid Image Hash - {hash}'
+- :error_code: '1487194'
+  :description: 'Permission Error: Either the object you are trying to access is not
+    visible to you or the action you are trying to take is restricted to certain account
+    types.'
+- :error_code: '1487199'
+  :description: 'Ad targeting does not match targeting of the story: The targeting
+    specified for this ad is not compatible with the story being boosted. Check the
+    privacy and language/country targeting of the story you are trying to sponsor.'
+- :error_code: '1487202'
+  :description: 'Invalid object - not admin or object not public: The user is not
+    an admin of the object or the object is not publicly accessible.'
+- :error_code: '1487211'
+  :description: 'Invalid URL For Creative Destination: Creative must have a valid
+    destination URL, and if attached object is page, destination must match page.'
+- :error_code: '1487225'
+  :description: 'Ad Creation Limited By Daily Spend: The number of ads you can create
+    in a given period of time has a limit determined by your daily spend level. Higher
+    spend levels allow creation of more ads. Increase your daily spend limit or create
+    fewer ads per time period.'
+- :error_code: '1487244'
+  :description: 'Campaign Update Failed: Campaign {campaign_id}: {reason}'
+- :error_code: '1487246'
+  :description: 'Campaign Creation Failed: {reason}'
+- :error_code: '1487256'
+  :description: 'Targeting declined due to policy: Invalid ads targeting. The targeting
+    spec was declined due to policy restrictions.'
+- :error_code: '1487283'
+  :description: 'Not Allowed To Use View Tags: Only some partners are allowed to use
+    view tags. Please verify that you are using an approved account.'
+- :error_code: '1487301'
+  :description: 'Custom Audience Unavailable: The custom audience you''re trying to
+    use hasn''t been shared with your ad account. Please create or choose a different
+    custom audience, or ask the owner of the custom audience to let you use it.'
+- :error_code: '1487346'
+  :description: 'The post does not belong to the specified Page: Post to be promoted
+    does not belong to the Page specified. The post belongs to {otherDestination};
+    try using this as the destination or using a post that belongs to the specified
+    Page. Specified Page: {destination}.'
+- :error_code: '1487366'
+  :description: 'Custom Audience Has Been Deleted: Cannot use deleted custom audience.
+    Please choose another audience.'
+- :error_code: '1487376'
+  :description: 'Conversion Spec Needed: For ads pointing to an offsite location with
+    a non-zero bid on actions, you must specify the conversion spec.'
+- :error_code: '1487380'
+  :description: Invalid aggregation day for conversion data. The aggregation day must
+    be larger than or equal to 1.
+- :error_code: '1487390'
+  :description: 'Adcreative Create Failed: The Adcreative Create Failed for the following
+    reason: {reason}'
+- :error_code: '1487391'
+  :description: 'Cannot Use Syndicated Audiences From Multiple Partners: When specifying
+    partner-created custom audiences for an ad, all audiences must be from the same
+    provider.'
+- :error_code: '1487396'
+  :description: 'Failed to update the creative: Failed to update creative {id}. Failed
+    for the following reason: {reason}'
+- :error_code: '1487424'
+  :description: 'Ad Needs Exclusion Targeting: This ad cannot be created with the
+    targeting spec you selected. Your ad has a conversion objective that users can
+    only do once, so you must target the ad at those users who have not already converted.
+    If you are using the Facebook API, consider including the following string in
+    your targeting spec: {exclusion-targeting-spec}.'
+- :error_code: '1487465'
+  :description: 'Invalid CPA Bid: The action type you selected is not allowed for
+    Cost-Per-Action (CPA) bidding: ''{action_type}''. Please change your optimization
+    goal or switch your bid type to regular Optimized CPM.'
+- :error_code: '1487472'
+  :description: This type of page post is not eligible to be promoted. {debug_info}
+- :error_code: '1487477'
+  :description: 'Conversion Tracking Pixel Permission Error: The conversion tracking
+    pixel you''re trying to use is owned by another user and hasn''t been shared with
+    you. Please use a tracking pixel that''s been shared with you or create a new
+    one.'
+- :error_code: '1487485'
+  :description: Too many async requests
+- :error_code: '1487506'
+  :description: 'The new budget value is too low: The new budget value of {new_budget}
+    is too low. The minimum acceptable is {minimum_budget}.'
+- :error_code: '1487557'
+  :description: No supported fields were provided for updating the campaign
+- :error_code: '1487558'
+  :description: No supported fields were provided for updating the ad
+- :error_code: '1487559'
+  :description: Ad Update Failed {reason}
+- :error_code: '1487573'
+  :description: You must specify an object_id for this adcreative type (creative type
+    27)
+- :error_code: '1487742'
+  :description: There have been too many calls from this ad-account. Wait a bit and
+    try again.
+- :error_code: '1487756'
+  :description: You have overlapping locations specified in the geo_locations field.
+    Your broader option will override the narrower option, please remove one to proceed.
+- :error_code: '1487790'
+  :description: 'The promoted object is invalid: it could have been deleted or never
+    existed.'
+- :error_code: '1487881'
+  :description: The given prediction id in a reach and frequency campaign is not reserved.
+- :error_code: '1487882'
+  :description: The given reservation in a reach and frequency campaign is not finalized
+    yet.
+- :error_code: '1487884'
+  :description: The given reservation in a reach and frequency campaign is already
+    finalized
+- :error_code: '1487885'
+  :description: The prediction in a reach and frequency campaign is already reserved.
+- :error_code: '1487886'
+  :description: This indicates the operation fails for an unknown reason.
+- :error_code: '1487887'
+  :description: The given page types are not supported by the inventory manager.
+- :error_code: '1487915'
+  :description: A finalized prediction order can not be cancelled. You can create
+    a new prediction or delete the campaign.
+- :error_code: '1634013'
+  :description: 'Conversion Spec Targets Invalid ID: You are targeting an ID in your
+    conversion spec without admin permissions on that object. {debug_info}'
+- :error_code: '1667002'
+  :description: 'This Promotion Can''t Be Edited: This can''t be edited because you
+    promoted it from your Page. Find the post on your Page to pause, delete, or update
+    budget for this promotion.'

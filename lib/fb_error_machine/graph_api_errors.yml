@@ -1,0 +1,76 @@
+---
+- :error_code: OAuthException
+  :description: ''
+  :instructions: If no subcode is present, this means that the login status or access
+    token has expired, been revoked, or is otherwise invalid. Get a new access token.
+    If a subcode is present, see the subcode.
+- :error_code: '102'
+  :description: API Session
+  :instructions: If no subcode is present, this means that the login status or access
+    token has expired, been revoked, or is otherwise invalid. Get a new access token.
+    If a subcode is present, see the subcode.
+- :error_code: '1'
+  :description: API Unknown
+  :instructions: Possibly a temporary issue due to downtime. Wait and retry the operation.
+    If it occurs again, check you are requesting an existing API.
+- :error_code: '2'
+  :description: API Service
+  :instructions: Temporary issue due to downtime. Wait and retry the operation.
+- :error_code: '4'
+  :description: API Too Many Calls
+  :instructions: Temporary issue due to throttling. Wait and retry the operation,
+    or examine your API request volume.
+- :error_code: '17'
+  :description: API User Too Many Calls
+  :instructions: Temporary issue due to throttling. Wait and retry the operation,
+    or examine your API request volume.
+- :error_code: '10'
+  :description: API Permission Denied
+  :instructions: Permission is either not granted or has been removed. Handle the
+    missing permissions.
+- :error_code: '190'
+  :description: Access token has expired
+  :instructions: Get a new access token.
+- :error_code: 200-299
+  :description: API Permission (Multiple values depending on permission)
+  :instructions: Permission is either not granted or has been removed. Handle the
+    missing permissions.
+- :error_code: '341'
+  :description: Application limit reached
+  :instructions: Temporary issue due to downtime or throttling. Wait and retry the
+    operation, or examine your API request volume.
+- :error_code: '368'
+  :description: Temporarily blocked for policies violations
+  :instructions: Wait and retry the operation.
+- :error_code: '506'
+  :description: Duplicate Post
+  :instructions: Duplicate posts cannot be published consecutively. Change the content
+    of the post and try again.
+- :error_code: '1609005'
+  :description: Error Posting Link
+  :instructions: There was a problem scraping data from the provided link. Check the
+    URL and try again.
+- :error_code: '458'
+  :description: App Not Installed
+  :instructions: The user has not logged into your app. Reauthenticate the user.
+- :error_code: '459'
+  :description: User Checkpointed
+  :instructions: The user needs to log in at https://www.facebook.com or https://m.facebook.com
+    to correct an issue.
+- :error_code: '460'
+  :description: Password Changed
+  :instructions: On iOS 6 and above, if the person logged in using the OS-integrated
+    flow, they should be directed to Facebook OS settings on the device to update
+    their password. Otherwise, they must login to the app again.
+- :error_code: '463'
+  :description: Expired
+  :instructions: Login status or access token has expired, been revoked, or is otherwise
+    invalid. Handle expired access tokens.
+- :error_code: '464'
+  :description: Unconfirmed User
+  :instructions: The user needs to log in at https://www.facebook.com or https://m.facebook.com
+    to correct an issue.
+- :error_code: '467'
+  :description: Invalid access token
+  :instructions: Access token has expired, been revoked, or is otherwise invalid.
+    Handle expired access tokens.
