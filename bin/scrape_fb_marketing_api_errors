@@ -1,4 +1,3 @@
-% cat bin/scrape_fb_marketing_errors
 #!/usr/bin/env ruby
 
 require 'fb_error_machine'

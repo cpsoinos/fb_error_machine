@@ -27,10 +27,14 @@ Gem::Specification.new do |spec|
     f.match(%r{^(test|spec|features)/})
   end
   spec.bindir        = "exe"
-  spec.executables   = ["scrape_fb_errors", "scrape_fb_graph_api_errors", "scrape_fb_marketing_api_errors"]
+  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.2"
+
+  ["scrape_fb_errors", "scrape_fb_graph_api_errors", "scrape_fb_marketing_api_errors"].each do |executable|
+    spec.executables << executable
+  end
 end
