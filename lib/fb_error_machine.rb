@@ -4,23 +4,25 @@ require 'sanitize'
 require 'pry'
 require 'rest-client'
 require 'yaml'
-require 'fb_error_machine/marketing_error_scraper'
+require 'fb_error_machine/marketing_api_error_scraper'
 require 'fb_error_machine/graph_error_scraper'
 require 'fb_error_machine/error_writer'
-require 'fb_error_machine/errors'
+require 'fb_error_machine/error_base'
+require 'fb_error_machine/marketing_api_error'
+require 'fb_error_machine/graph_api_error'
 # require 'fb_error_machine/graph_api_errors.yml'
-# require 'fb_error_machine/marketing_errors.yml'
+# require 'fb_error_machine/marketing_api_errors.yml'
 # require 'fb_error_machine/version'
 
 
 module FbErrorMachine
 
   # post '/scrape' do
-  #   scrape_marketing_errors
+  #   scrape_marketing_api_errors
   #   scrape_graph_api_errors
   # end
 
-  def scrape_marketing_errors
+  def scrape_marketing_api_errors
     browser = Watir::Browser.new :phantomjs
     browser.goto("https://developers.facebook.com/docs/marketing-api/error-reference")
     rows = browser.trs.to_a
@@ -32,7 +34,7 @@ module FbErrorMachine
       errors << {
         error_code: find_error_code(row),
         description: find_description(row),
-        category: "marketing_error"
+        category: "marketing_api_error"
       }
     end
 
