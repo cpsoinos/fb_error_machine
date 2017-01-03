@@ -1,3 +1,0 @@
-require 'fb_error_machine'
-
-FbErrorMachine::Scraper.new

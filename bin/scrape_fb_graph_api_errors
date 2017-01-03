@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'fb_error_machine'
+
+FbErrorMachine::Scraper.new.scrape_graph_api_errors(ARGV[0])
