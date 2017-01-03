@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{A glossary for Facebook error codes.}
   spec.description   = %q{A simple scraper to pull Facebook's list of error codes and descriptions from the documentation.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/cpsoinos/fb_error_machine"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
