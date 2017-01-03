@@ -1,9 +1,9 @@
 module FbErrorMachine
   class MarketingApiErrorScraper
 
-    def self.scrape_marketing_api_errors
+    def self.scrape_marketing_api_errors(version)
       browser = Watir::Browser.new :phantomjs
-      browser.goto("https://developers.facebook.com/docs/marketing-api/error-reference")
+      browser.goto("https://developers.facebook.com/docs/marketing-api/error-reference/v#{version}")
       rows = browser.trs.to_a
       rows.shift
 
