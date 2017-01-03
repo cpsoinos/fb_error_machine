@@ -1,7 +1,7 @@
 describe FbErrorMachine::GraphApiError do
 
   it "returns a list of all errors" do
-    expect(FbErrorMachine::GraphApiError.all).count to eq(19)
+    expect(FbErrorMachine::GraphApiError.all.count).to eq(19)
   end
 
   it "finds an error by code when passed a string" do

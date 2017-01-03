@@ -15,7 +15,7 @@ module FbErrorMachine
     end
 
     def self.find(error_code)
-      GraphApiError.all.detect { |e| e.error_code == error_code }
+      GraphApiError.all.detect { |e| e.error_code == error_code.to_s }
     end
 
   end

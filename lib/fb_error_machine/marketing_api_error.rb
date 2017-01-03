@@ -15,7 +15,7 @@ module FbErrorMachine
     end
 
     def self.find(error_code)
-      MarketingApiError.all.detect { |e| e.error_code == error_code }
+      MarketingApiError.all.detect { |e| e.error_code == error_code.to_s }
     end
 
   end

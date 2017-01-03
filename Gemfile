@@ -6,6 +6,7 @@ group :development, :test do
   gem 'sanitize'
   gem 'pry'
   gem 'rest-client'
+  gem 'rspec'
 end
 
 gemspec
