@@ -22,7 +22,7 @@ module FbErrorMachine
 
     def scrape_marketing_api_errors(version="2.7")
       puts "Begin scraping Marketing API Error list from 'https://developers.facebook.com/docs/marketing-api/error-reference/v#{version}'"
-      GraphErrorScraper.scrape_marketing_api_errors
+      MarketingApiErrorScraper.scrape_marketing_api_errors
       puts "Stored Marketing API Errors"
     end
 
